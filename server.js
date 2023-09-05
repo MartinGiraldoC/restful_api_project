@@ -20,6 +20,10 @@ app.use('/api/V1/users',require('./api/V1/routees/user.routes'))
 app.use('/api/V1/articles',require('./api/V1/routees/articles.routes'))
 app.use('/api/V1/categories',require('./api/V1/routees/categories.routes'))
 
+app.get('/api/v1/test',(req, res)=>{
+    res.send('Hello ADSO!!!')
+})
+
 // app.get('/',(req, res)=>{
 //     console.log("ruta ppal");
 //     res.send({title:'Ruta ppal', message: 'Acesso a la ruta ppal'})
